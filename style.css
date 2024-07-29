@@ -50,6 +50,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 4.3rem;
 }
 .banner-text {
   max-width: 582px;
@@ -68,8 +69,21 @@ header {
 span {
   margin-left: 8px;
 }
-
 .banner-img {
   padding: 30px 33px 31px 2px;
   background: url("./images/Circle\ design.svg") no-repeat;
+}
+
+/* brand logos style  */
+.brand-logos {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3.875rem 2.25rem;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  border-image: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+  border-image-slice: 1;
 }
