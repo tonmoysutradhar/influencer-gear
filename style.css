@@ -3,14 +3,22 @@
 body {
   font-family: "Poppins", sans-serif;
   color: rgb(58, 58, 58);
-  
+  margin: 0;
+}
+/* shared style  */
+.btn-now {
+  font-weight: 700;
+  color: white;
+  background: rgb(224, 44, 109);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 41px;
 }
 
 /* hader style  */
 header {
   width: 90%;
   margin: 0 auto;
-  /* background-color: aquamarine; */
 }
 
 /* navbar style  */
@@ -18,7 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
+  margin: 3rem 0;
 }
 .logo-name h3 {
   font-weight: 700;
@@ -37,3 +45,31 @@ header {
 }
 
 /* banner style  */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.banner-text {
+  max-width: 582px;
+}
+.banner-text h2 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  margin: 0;
+}
+.banner-text p {
+  font-weight: 600;
+  line-height: 24px;
+  margin: 1rem 0;
+}
+span {
+  margin-left: 8px;
+}
+
+.banner-img {
+  padding: 30px 33px 31px 2px;
+  background: url("./images/Circle\ design.svg") no-repeat;
+}
