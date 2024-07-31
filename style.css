@@ -31,6 +31,10 @@ header {
   align-items: center;
   margin: 3rem 0;
 }
+.ham-menu,
+.cart-menu {
+  display: none;
+}
 .logo-name h3 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -194,10 +198,10 @@ span {
   border-radius: 0;
 }
 
-footer{
+footer {
   margin-top: 5rem;
   padding: 4rem;
-  background-color: rgba(10,8,38,255);
+  background-color: rgba(10, 8, 38, 255);
 }
 .footer-product {
   max-width: 262px;
@@ -235,4 +239,57 @@ footer{
 .social-media-icon i {
   color: white;
   font-size: 20px;
+}
+
+/* responsive for medium devices  */
+/* @media screen and (min-width: 576px) and (max-width: 992px) {
+  .details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .brand-logos {
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */
+
+/* responsive for small devices  */
+@media screen and (max-width: 576px) {
+  .ham-menu,
+  .cart-menu {
+    display: block;
+  }
+  .details {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .brand-logos {
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .popular-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-products {
+    flex-direction: column;
+  }
+
+  /* .details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .brand-logos {
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
 }
