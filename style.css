@@ -257,6 +257,11 @@ footer {
 
 /* responsive for small devices  */
 @media screen and (max-width: 576px) {
+  header,
+  main {
+    width: 94%;
+    margin: 0 auto;
+  }
   .ham-menu,
   .cart-menu {
     display: block;
@@ -264,32 +269,71 @@ footer {
   .details {
     display: none;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0 1.5rem 0;
+  }
   .banner {
     flex-direction: column-reverse;
+    margin-bottom: 3.25rem;
   }
   .banner-text {
     text-align: center;
   }
+  .banner-text h2 {
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+  .banner-text p {
+    margin: 1rem 0 1.25rem 0;
+  }
+  .banner-img {
+    background-size: 300px 300px;
+    background-position: center;
+  }
+  .banner-img img {
+    width: 274px;
+    margin-left: 40px;
+    margin-bottom: 7px;
+  }
   .brand-logos {
-    gap: 3rem;
+    width: fit-content;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem;
+  }
+  .popular-collection {
+    width: fit-content;
+    margin: 3.2rem auto;
   }
   .popular-container {
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
   .featured-products {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.9rem;
+    width: fit-content;
   }
-
-  /* .details {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+  .featured-products img {
+    width: 100%;
   }
-  .brand-logos {
-    gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  } */
+  .products-details h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .products-details p {
+    margin: 1rem 0 2rem 0;
+  }
+  footer {
+    margin-top: 3.2rem;
+    padding: 3.2rem 0;
+  }
+  .footer-product h4 {
+    font-size: 1rem;
+  }
 }
